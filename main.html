@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Information</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+
+<!-- Div to display browser information -->
+<div id="browser-info"></div>
+
+<!-- JavaScript code to detect and display browser information -->
+<script>
+    // Get browser information
+    const browserName = navigator.appName;
+    const version = navigator.appVersion;
+
+    // Display information in the div with id "browser-info"
+    const browserInfoDiv = document.getElementById('browser-info');
+    browserInfoDiv.innerText = "You are using " + browserName + " version " + version;
 </script>
 
 </body>
-
 </html>
